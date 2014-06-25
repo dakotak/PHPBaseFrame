@@ -1,0 +1,13 @@
+#
+# .htaccess used by apache to route requests to index.php
+#
+# @author    Dakota Knutson <dakotak@outlook.com>
+# @package   PHPBaseFrame
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [PT,L]
+</IfModule>
