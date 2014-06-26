@@ -17,4 +17,6 @@ define('ROOT',dirname(__FILE__));
 // Application initalization
 require_once ROOT.'/application/init.php';
 
+// Application autoloader
+require_once ROOT.'/application/autoload.php';
 
