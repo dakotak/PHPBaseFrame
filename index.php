@@ -10,6 +10,11 @@
  * 
  */
  
- /***** Application Entry Point *****/
+/***** Application Entry Point *****/
  
- 
+define('ROOT',dirname(__FILE__));
+
+// Application initalization
+require_once ROOT.'/application/init.php';
+
+
