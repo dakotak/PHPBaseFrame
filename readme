@@ -1,0 +1,26 @@
+
+
+
+My Idea of MVC
+================
+An mvc application should have only one entry point. I think this is safe to say even if the application
+offers and API, in this case and API controller should be used. I like the idea of maybe, MAYBE just allowing
+controller to load other controllers, but at the same time I think that this could get very messy.
+
+(M)odels
+---------------
+Modeles are classes or objects the access data, this does not need to be data from a database, this could be
+disk or shell commands, anything the gets data. Idealy a model will model, (Imagin that) the data you are 
+trying to get. I belive that a strict relationship between models and controllers is lame. I thihnk that any
+controller should be able to use any avalible modle givin it can satisfy the models requirements.
+
+(V)iews
+---------------
+A view is a file, no a class or object that is able to access variables from the controller to render a view
+to send to the user. Once again I dont think that views should be tied directly to a controller but becasue of
+the nature of a controller and a view, most of the time they will be.
+
+(C)ontrollers
+---------------
+A controller is a class or object with the job of requesting data from models and giving it to the view, most
+of the time controllers shoudl be pretty light, since most of the work shoudl be done in the views and modles.
