@@ -24,3 +24,26 @@ the nature of a controller and a view, most of the time they will be.
 ---------------
 A controller is a class or object with the job of requesting data from models and giving it to the view, most
 of the time controllers shoudl be pretty light, since most of the work shoudl be done in the views and modles.
+
+My Idea of MVC flow and parts
+==============================
+All reaquest should be routed to a single file, apache2 can do this .htaccess.
+
+                       +-----------+
+ All Requests +----->  | index.php |--+
+                       +-----------+  |--> Load init.php
+                                      |
+                                      |--> Load autoload.php
+                                      |
+                                      |--> New Application Instance
+                                      |
+                                      |--> app::start()
+                    
+                            
+                           
+                         
+
+
+
+
+
